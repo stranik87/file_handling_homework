@@ -6,5 +6,14 @@ def main(data:str):
     Returns:
         list: return answer
     """
+    f = open(data).read()
+    print(f)
+    x = []
+    for item in f:
+        if item.isalpha():
+            x.append(item)
+    return x
+    
+print(main("txt_file/data04.txt"))
     
 # Read data from file
